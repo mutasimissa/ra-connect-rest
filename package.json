@@ -1,5 +1,5 @@
 {
-    "name": "ra-connect-rest",
+    "name": "@sourcyax/ra-connect-rest",
     "version": "0.0.2",
     "description": "REST data provider of sourcya/connect services for react-admin ",
     "keywords": [
@@ -11,6 +11,10 @@
     "license": "MIT",
     "main": "lib/index.js",
     "module": "esm/index.js",
+    "source": "src/index.tsx",
+    "engines": {
+      "node": ">=10"
+    },
     "peerDependencies": {
       "ra-core": "^3.0.0"
     },
