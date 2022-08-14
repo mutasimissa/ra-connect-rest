@@ -9,12 +9,14 @@
     ],
     "author": "Mutasim Issa https://github.com/mutasimissa",
     "license": "MIT",
-    "main": "lib/index.js",
-    "module": "esm/index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.modern.js",
     "source": "src/index.tsx",
     "engines": {
       "node": ">=10"
     },
+    "devDependencies": {
+        "rimraf":
     "peerDependencies": {
       "ra-core": "^3.0.0"
     },
@@ -23,9 +25,7 @@
       "url": "git+https://github.com/mutasimissa/ra-connect-rest.git"
     },
     "scripts": {
-      "build": "yarn run build-cjs && yarn run build-esm",
-      "build-cjs": "rimraf ./lib && tsc",
-      "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+      "build": "microbundle-crl --no-compress --format modern,cjs",
       "watch": "tsc --outDir esm --module es2015 --watch"
     }
   }
