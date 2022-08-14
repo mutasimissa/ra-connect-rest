@@ -1,6 +1,6 @@
 {
     "name": "@sourcyax/ra-connect-rest",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "REST data provider of sourcya/connect services for react-admin ",
     "keywords": [
       "strapi",
