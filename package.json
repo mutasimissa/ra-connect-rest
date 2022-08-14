@@ -1,6 +1,6 @@
 {
     "name": "@sourcyax/ra-connect-rest",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "REST data provider of sourcya/connect services for react-admin ",
     "keywords": [
       "strapi",
@@ -15,8 +15,6 @@
     "engines": {
       "node": ">=10"
     },
-    "devDependencies": {
-        "rimraf":
     "peerDependencies": {
       "ra-core": "^3.0.0"
     },
