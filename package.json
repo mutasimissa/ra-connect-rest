@@ -1,0 +1,27 @@
+{
+    "name": "ra-connect-rest",
+    "version": "0.0.1",
+    "description": "REST data provider of sourcya/connect services for react-admin ",
+    "keywords": [
+      "strapi",
+      "react-admin",
+      "sourcya"
+    ],
+    "author": "Mutasim Issa https://github.com/mutasimissa",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "module": "esm/index.js",
+    "peerDependencies": {
+      "ra-core": "^3.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mutasimissa/ra-connect-rest.git"
+    },
+    "scripts": {
+      "build": "yarn run build-cjs && yarn run build-esm",
+      "build-cjs": "rimraf ./lib && tsc",
+      "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+      "watch": "tsc --outDir esm --module es2015 --watch"
+    }
+  }
